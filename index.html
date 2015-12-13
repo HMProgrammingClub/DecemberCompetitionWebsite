@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>December Competition</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="http://bootswatch.com/simplex/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="page-header">
+			<h1>HM Programming Club: December Competition</h1>
+			<p class="lead">Leaderboard and submission page for the December programming competition at Horace Mann School.   Full rules for the competition can be found <a href="https://goo.gl/N3jBSP">here</a>.</p>
+		</div>
+
+		<h3>Leaderboard</h3>
+
+		<table class="table well well-sm">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Distance</th>
+				</tr>
+			</thead>
+			<tbody id="leaderboard">
+			</tbody>
+		</table>
+
+
+
+		<h3>New Submission</h3>
+
+		<form class="well well-sm" id="submissionForm">
+			<fieldset class="form-group">
+				<label for="nameField">Full Name</label>
+				<input type="text" class="form-control" name="name" id="nameField" placeholder="John Smith">
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="exampleInputFile">Solution Upload</label>
+				<input type="file" class="form-control-file" id="submissionFile" name="outputFile">
+			</fieldset>
+			<button type="button" id="submitFile" class="btn btn-primary">Submit and Grade</button>
+
+		</form>
+
+		<div id="errorbox"></div>
+		<div id="succbox"></div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+
+</body>
+
+</html>
