@@ -1,2 +1,4 @@
-## Backend contains sensitive information
-Backend/
+## these files and folders contains sensitive information
+*/Output/
+config.php
+Database.sql
